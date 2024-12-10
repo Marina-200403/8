@@ -1,48 +1,15 @@
-from random import randint
-import numpy as np
-
 class Matrica():
     def __init__(self):
-        self.size = 0
-        self.mat_1 = []
-        self.mat_2 = []
-        self.new_mat = []
-        self.det = 0
-        self.flag = 1
+        pass
     
     def make_mat(self):
-        self.size=int(input('введите размер матрицы\n'))
-        self.mat_1 = self.mat_input()
-        self.mat_2 = self.mat_input()
-        self.new_mat = [ [0]*self.size for i in range(self.size)]
-        self.flag = 2
+        pass
     
     def sum_mat(self):
-        if self.flag < 2:
-            print ("ERROR")
-            return 0
-        self.new_mat = np.add(np.array(self.mat_1), np.array(self.mat_2))
-        self.det = np.linalg.det(np.array(self.new_mat))
-        self.flag = 3
-    
-    def mat_input(self):
-        mat = [ [0]*self.size for i in range(self.size)]
-        print('Вводите не числа, если хотите сгенерировать')
-        for i in range(self.size):
-            for j in range(self.size):
-                s = input()
-                if is_int(s):
-                    mat[i][j] = int(s)
-                else:
-                    mat[i][j] = randint(-5,5) 
-        return mat
+        pass
     
     def mat_output(self):
-        if self.flag < 3:
-            print ("ERROR")
-            return 0
-        print(self.mat_1, self.mat_2, sep = '\n')
-        print(self.new_mat, '\n', self.det)
+        pass
 
 
 
